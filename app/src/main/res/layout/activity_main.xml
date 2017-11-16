@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rutina.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl" >
+
+                <!-- headers bar -->
+
+                <TextView
+                    android:text="רוטינה"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="האירוע הקודם"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="האירוע הבא"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl" >
+
+                <!-- routine names -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/white" >
+
+                    <Button
+                        android:text="רופא עור"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:text="טסט לאוטו"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+                <!-- prev events -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white" >
+
+                    <Button
+                        android:text="12.10.17"
+                        android:textSize="12dp"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:text="8.7.17"
+                        android:textSize="12dp"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+                <!-- next events -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white" >
+
+                    <Button
+                        android:text="12.4.18"
+                        android:textSize="12dp"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:text="8.7.17"
+                        android:textSize="12dp"
+                        android:background="@drawable/table_data_cell_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 'add routine' button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:text="רוטינה חדשה"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="startCreateRoutineActivity" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
