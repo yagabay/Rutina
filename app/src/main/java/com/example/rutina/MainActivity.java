@@ -18,30 +18,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void startCreateRoutineActivity(View view)
-    {
-        Intent intent = new Intent(this, CreateRoutineActivity.class);
-        startActivity(intent);
-    }
-
-    public void startEditRoutineActivity(View view)
-    {
-        Intent intent = new Intent(this, EditRoutineActivity.class);
-        startActivity(intent);
-    }
-
-    public void startEditEventTime(View view)
-    {
-        Intent intent = new Intent(this, EditEventTimeActivity.class);
-        startActivity(intent);
-    }
-
-    public void startEditSetEventReminderActivity(View view)
-    {
-        Intent intent = new Intent( this, EditSetEventTimeReminderActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -63,13 +39,47 @@ public class MainActivity extends AppCompatActivity {
             case R.id.itm_edit_routine:
                 startEditRoutineActivity(null);
                 return true;
-            case R.id.itm_edit_event_time:
-                startEditEventTime(null);
+            case R.id.itm_edit_prev_event:
+                startEditPrevEventActivity(null);
                 return true;
-            case R.id.itm_edit_set_event_time_reminder:
-                startEditSetEventReminderActivity(null);
+            case R.id.itm_edit_next_event:
+                startEditNextEventActivity(null);
+                return true;
+            case R.id.itm_edit_event_time:
+                startEditEventTimeActivity(null);
                 return true;
         }
         return false;
     }
+
+    public void startCreateRoutineActivity(View view)
+    {
+        Intent intent = new Intent(this, NewRoutineActivity.class);
+        startActivity(intent);
+    }
+
+    public void startEditRoutineActivity(View view)
+    {
+        Intent intent = new Intent(this, EditRoutineActivity.class);
+        startActivity(intent);
+    }
+
+    public void startEditPrevEventActivity(View view)
+    {
+        Intent intent = new Intent(this, EditPrevEventActivity.class);
+        startActivity(intent);
+    }
+
+    public void startEditNextEventActivity(View view)
+    {
+        Intent intent = new Intent(this, EditNextEventActivity.class);
+        startActivity(intent);
+    }
+
+    public void startEditEventTimeActivity(View view)
+    {
+        Intent intent = new Intent(this, EditEventTimeActivity.class);
+        startActivity(intent);
+    }
+
 }

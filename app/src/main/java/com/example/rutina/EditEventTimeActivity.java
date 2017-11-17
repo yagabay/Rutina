@@ -12,7 +12,7 @@ public class EditEventTimeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_event_time);
-        getSupportActionBar().setTitle("הגדר מועד אירוע");
+        getSupportActionBar().setTitle("מועד הארוע ה...");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 

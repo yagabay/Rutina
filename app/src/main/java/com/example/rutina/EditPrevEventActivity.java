@@ -1,21 +1,18 @@
 package com.example.rutina;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
 
-import com.example.rutina.R;
-
-public class CreateRoutineActivity extends AppCompatActivity
-{
+public class EditPrevEventActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_routine);
-        getSupportActionBar().setTitle("צור רוטינה");
+        setContentView(R.layout.activity_edit_prev_event);
+        getSupportActionBar().setTitle("ערוך הארוע הקודם");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -29,4 +26,11 @@ public class CreateRoutineActivity extends AppCompatActivity
         }
         return false;
     }
+
+    public void startEditEventTime(View view)
+    {
+        Intent intent = new Intent(this, EditEventTimeActivity.class);
+        startActivity(intent);
+    }
+
 }

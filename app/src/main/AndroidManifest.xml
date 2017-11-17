@@ -17,9 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".EditRoutineActivity" />
-        <activity android:name=".CreateRoutineActivity" />
+        <activity android:name=".NewRoutineActivity" />
         <activity android:name=".EditEventTimeActivity" />
-        <activity android:name=".EditSetEventTimeReminderActivity"></activity>
+        <activity android:name=".EditNextEventActivity" />
+        <activity android:name=".EditPrevEventActivity"></activity>
     </application>
 
 </manifest>

@@ -11,11 +11,15 @@
         android:title="ערוך רוטינה" />
 
     <item
-        android:id="@+id/itm_edit_event_time"
-        android:title="ערוך מועד ארוע" />
+        android:id="@+id/itm_edit_prev_event"
+        android:title="ערוך הארוע הקודם" />
 
     <item
-        android:id="@+id/itm_edit_set_event_time_reminder"
-        android:title="ערוך תזכורת לקביעת מועד מאורע" />
+        android:id="@+id/itm_edit_next_event"
+        android:title="ערוך הארוע הבא" />
+
+    <item
+        android:id="@+id/itm_edit_event_time"
+        android:title="ערוך מועד הארוע" />
 
 </menu>

@@ -15,7 +15,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="60dp">
+            android:layout_height="50dp">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -26,8 +26,8 @@
                 <!-- headers bar -->
 
                 <TextView
-                    android:text="רוטינה"
-                    android:textSize="17dp"
+                    android:text="הרוטינה"
+                    android:textSize="18dp"
                     android:textColor="@color/black"
                     android:background="@drawable/table_header_cell_background"
                     android:textStyle="bold"
@@ -38,7 +38,7 @@
 
                 <TextView
                     android:text="האירוע הקודם"
-                    android:textSize="17dp"
+                    android:textSize="18dp"
                     android:textColor="@color/black"
                     android:background="@drawable/table_header_cell_background"
                     android:textStyle="bold"
@@ -49,7 +49,7 @@
 
                 <TextView
                     android:text="האירוע הבא"
-                    android:textSize="17dp"
+                    android:textSize="18dp"
                     android:textColor="@color/black"
                     android:background="@drawable/table_header_cell_background"
                     android:textStyle="bold"
@@ -83,17 +83,37 @@
                     android:layout_weight="3"
                     android:background="@color/white" >
 
-                    <Button
-                        android:text="רופא עור"
-                        android:background="@drawable/table_data_cell_background"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditRoutineActivity" >
+                    
+                        <TextView
+                            android:text="רופא עור"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
 
-                    <Button
-                        android:text="טסט לאוטו"
-                        android:background="@drawable/table_data_cell_background"
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="טסט לאוטו"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -106,19 +126,38 @@
                     android:layout_weight="1"
                     android:background="@color/white" >
 
-                    <Button
-                        android:text="12.10.17"
-                        android:textSize="12dp"
-                        android:background="@drawable/table_data_cell_background"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditPrevEventActivity" >
 
-                    <Button
-                        android:text="8.7.17"
-                        android:textSize="12dp"
-                        android:background="@drawable/table_data_cell_background"
+
+                    <TextView
+                            android:text="-"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="8.7.17"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -131,19 +170,37 @@
                     android:layout_weight="1"
                     android:background="@color/white" >
 
-                    <Button
-                        android:text="12.4.18"
-                        android:textSize="12dp"
-                        android:background="@drawable/table_data_cell_background"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditNextEventActivity" >
 
-                    <Button
-                        android:text="8.7.17"
-                        android:textSize="12dp"
-                        android:background="@drawable/table_data_cell_background"
+                    <TextView
+                            android:text="-"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="11.2.18"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -158,12 +215,12 @@
             android:layout_height="wrap_content" >
 
             <Button
-                android:text="רוטינה חדשה"
+                android:text="צור רוטינה"
                 android:textSize="20dp"
                 android:textColor="@color/white"
                 android:background="@color/blue"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:onClick="startCreateRoutineActivity" />
 

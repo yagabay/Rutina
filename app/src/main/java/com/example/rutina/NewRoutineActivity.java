@@ -5,16 +5,19 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
-public class EditRoutineActivity extends AppCompatActivity
+import com.example.rutina.R;
+
+public class NewRoutineActivity extends AppCompatActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_routine);
-        getSupportActionBar().setTitle("ערוך רוטינה");
+        setContentView(R.layout.activity_create_routine);
+        getSupportActionBar().setTitle("צור רוטינה");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // spinners
         ArrayAdapter<CharSequence> adapter;
